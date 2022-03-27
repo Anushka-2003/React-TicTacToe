@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+}
+
+.board{
+    height: 100%;
+    width: 50%;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+}
+.display{
+    height: 100%;
+    width: 50%;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    height: 10%;
+    width: 100%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+}
+.content{
+    height: 90%;
+    width: 100%;
+    border: 3px solid white;
+}
+
+.ttt{
+    height: 75%;
+    width: 75%;
+    border: 3px solid white;
+    /* first dimension in margin is for the top */
+    margin: 70px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    /* due to display flex, height equal hi baatega 33% se bada koi bhi number likh do */
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+}
+.row button{
+    /* due to flex display apne aap equal width baat lenge */
+    width: 100%;
+    cursor: pointer;
+    font-size: 100px;
+}
+.row button:hover{
+    background-color: rgb(16, 172, 172);
+    color: white;
+}
+
+.history{
+    height: 75%;
+    width: 75%;
+    border: 3px solid white;
+    margin: 70px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.history button{
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.history button:hover{
+    background-color: rgb(43, 202, 202);
+    color: white;
+}
